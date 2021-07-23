@@ -71,6 +71,10 @@ type NcSetDnsHostsRequest struct {
 	Ttl string
 }
 
+func (r *NcSetDnsHostsRequest) Decode() ([]byte, error) {
+	return nil, nil
+}
+
 type NcGetDnsHostsRequest struct {
 	ApiUser string `xml:"ApiUser"`
 	ApiKey string  `xml:"ApiKey"`
@@ -82,6 +86,9 @@ type NcGetDnsHostsRequest struct {
 }
 
 
+func (r *NcGetDnsHostsRequest) Decode() ([]byte, error) {
+	return nil, nil
+}
 
 
 
